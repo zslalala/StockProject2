@@ -2,12 +2,19 @@
 </style>
 <template>
   <div id="centre">
-    <h1>首页</h1>
+    <el-row>
+      <stockprice></stockprice>
+    </el-row>
   </div>
 </template>
 
 <script>
+import stockprice from '../MainPage/StockPrice'
 export default{
-    name: 'centre'
+    name: 'centre',
+    components:{
+      stockprice
+    }
+
 }
 </script>
